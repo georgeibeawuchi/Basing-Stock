@@ -1,0 +1,37 @@
+public class Product {
+  private String name;
+  
+  private int stockLevel;
+  
+  private double price;
+  
+  public Product(String nameIn, int stockLevelIn, double priceIn) {
+    this.name = nameIn;
+    this.stockLevel = stockLevelIn;
+    this.price = priceIn;
+  }
+  
+  public void reStock(int stockLevelIn) {
+    this.stockLevel += stockLevelIn;
+  }
+  
+  public double sell(int stockLevelIn) {
+    return stockLevelIn * this.price;
+  }
+  
+  public void setPrice(double priceIn) {
+    this.price = priceIn;
+  }
+  
+  public String getName() {
+    return this.name;
+  }
+  
+  public int getStockLevel() {
+    return this.stockLevel;
+  }
+  
+  public double getPrice() {
+    return this.price;
+  }
+}
